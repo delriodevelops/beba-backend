@@ -12,7 +12,7 @@ const app = express();
 //middlewares
 app.use(logger)
 app.use(cors())
-
+app.use(express.static('public'))
 // Router
 app.use('/api', api);
 
